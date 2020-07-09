@@ -1,11 +1,19 @@
 Package: chargepointAPI
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Easy access to the UK National Chargepoint Registry API
+Version: 0.0.0.9000
+Authors@R: person("Richard", "Davey", email = "davey.richard@protonmail.com",
+    role = c("aut", "cre")) 
+Description: This package provides several convenience functions to interact
+    with the National Chargepoint Registry API, details found at 
+	http://chargepoints.dft.gov.uk/api/help. This API is managed by the 
+	Department of Transport and the Office for Low Emission Vehicles in the UK.
+	It contains details about all registered electric vehicle charging stations,
+	most of which are publically accessible.
+License: MIT
 Encoding: UTF-8
 LazyData: true
+Imports:
+    jsonlite,
+	sf
+RoxygenNote: 7.1.0
